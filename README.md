@@ -1,4 +1,4 @@
-Project Overview
+## Project Overview
 
 This project is inspired by the work in
 https://github.com/ColasGael/Machine-Learning-for-Solar-Energy-Prediction
