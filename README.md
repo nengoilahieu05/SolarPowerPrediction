@@ -1,4 +1,4 @@
-##Project Overview
+#Overview
 
 This project builds upon the ideas presented in the Machine Learning for Solar Energy Prediction repository by ColasGael, which approaches solar energy forecasting as a supervised regression task.
 
