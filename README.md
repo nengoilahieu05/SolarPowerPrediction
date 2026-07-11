@@ -1,12 +1,9 @@
-## Project Overview
+##Project Overview
 
-This project is inspired by the work in
-https://github.com/ColasGael/Machine-Learning-for-Solar-Energy-Prediction
-, which frames solar energy prediction as a regression problem using temporally mixed data.
+This project builds upon the ideas presented in the Machine Learning for Solar Energy Prediction repository by ColasGael, which approaches solar energy forecasting as a supervised regression task.
 
-However, mixing observations across time breaks the sequential dependency that is fundamental to solar energy generation. Weather dynamics, diurnal cycles, and seasonal patterns are inherently time-dependent, and treating them as independent samples leads to information leakage and unrealistic performance estimates.
+While the original implementation provides a strong baseline, it treats observations from different timestamps as independent samples. This assumption overlooks the temporal dependencies that naturally exist in solar energy generation. Weather conditions, solar irradiance, and seasonal patterns evolve continuously over time, making chronological order a critical component of accurate forecasting. Randomly mixing observations can introduce information leakage and lead to overly optimistic performance estimates.
 
-To address this limitation, this project reformulates solar energy prediction as a true time-series problem.
-All features are handled sequentially, preserving temporal order throughout preprocessing, model training, and evaluation.
+To address this limitation, this project reformulates solar energy prediction as a true time-series forecasting problem. The entire machine learning pipeline is designed to preserve temporal order, from data preprocessing and feature engineering to model training, validation, and evaluation. This methodology more closely reflects real-world deployment, where future energy output must be predicted using only historical observations.
 
-The goal of this project is to provide a more realistic and deployment-ready framework for solar energy forecasting by fully respecting the sequential nature of the data.
+The objective of this project is to develop a robust, realistic, and deployment-ready forecasting framework that captures temporal dependencies while producing more reliable and generalizable predictions for solar energy generation.
